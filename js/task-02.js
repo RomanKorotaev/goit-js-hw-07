@@ -1,4 +1,3 @@
-'use strict'
 /*
 Задание 2
 В HTML есть пустой список ul#ingredients.

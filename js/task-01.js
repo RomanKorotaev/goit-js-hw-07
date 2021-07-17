@@ -1,5 +1,3 @@
-'use strict'
-
 /*
 Задание 1
 В HTML есть список категорий ul#categories.
