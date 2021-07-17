@@ -43,14 +43,17 @@ const images = [
 // Decision // Решение
 
 const galleryRef = document.querySelector("#gallery");
-console.log(galleryRef)
+console.log(galleryRef);
+galleryRef.classList.add('js-images-list');
+galleryRef.classList.add('list');
 
-const tmpArray = images.map((oneImage) =>
-{
+const tmpArray = images.map((oneImage) => {
   const oneCardImege = document.createElement('li');
- oneCardImege.insertAdjacentHTML('afterbegin', `<img  src=${oneImage.url}  alt = ${oneImage.alt}>`);
+  oneCardImege.insertAdjacentHTML('afterbegin', `<img  src=${oneImage.url}  alt = ${oneImage.alt}  >  `);
+  oneCardImege.classList.add('js-images-list__item');
   return oneCardImege;
 })
+
 
 galleryRef.append(...tmpArray);
 

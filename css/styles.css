@@ -1,0 +1,39 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.js-images-list {
+  display: flex;
+  margin-left: -30px;
+}
+
+.js-images-list__item {
+  flex-basis: calc(100% / 3 - 30px);
+  height: auto;
+  margin-left: 30px;
+}
