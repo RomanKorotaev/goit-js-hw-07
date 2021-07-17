@@ -47,12 +47,19 @@ console.log(galleryRef);
 galleryRef.classList.add('js-images-list');
 galleryRef.classList.add('list');
 
+
 const tmpArray = images.map((oneImage) => {
   const oneCardImege = document.createElement('li');
   oneCardImege.insertAdjacentHTML('afterbegin', `<img  src=${oneImage.url}  alt = ${oneImage.alt}  >  `);
   oneCardImege.classList.add('js-images-list__item');
+
+  const imgRef =document.querySelector("img");
+
   return oneCardImege;
 })
+
+
+
 
 
 galleryRef.append(...tmpArray);
