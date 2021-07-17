@@ -50,7 +50,7 @@
 Количество элементов: 4
 */
 
-console.log("Файл подключен")
+// Decision // Решение
 
 const categoriesRef = document.querySelectorAll("ul .item");
 console.log( `В списке ${categoriesRef.length} категории`)
