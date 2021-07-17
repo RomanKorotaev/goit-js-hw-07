@@ -52,17 +52,12 @@
 
 console.log("Файл подключен")
 
-const categories = document.querySelectorAll("ul .item");
-//console.log(' categories = ', categories)
-console.log( `В списке ${categories.length} категории`)
+const categoriesRef = document.querySelectorAll("ul .item");
+console.log( `В списке ${categoriesRef.length} категории`)
 
-
-
-//console.log(categories[1].firstElementChild.textContent)
-
-for (const category of categories) {
-    console.log('category.firstElementChild.textContent', category.firstElementChild.textContent);
-    console.log('category.firstElementChild.textContent', category.firstElementChild[1].textContent);
-}
+categoriesRef.forEach(category => {
+  console.log(`Категория: ${category.firstElementChild.textContent}`);
+  console.log(`Количество элементов: ${category.lastElementChild.children.length}`);
+})
 
 
