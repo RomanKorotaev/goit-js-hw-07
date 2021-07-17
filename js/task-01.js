@@ -54,7 +54,7 @@ console.log("Файл подключен")
 
 const categories = document.querySelectorAll("ul .item");
 //console.log(' categories = ', categories)
-//console.log( `В списке ${categories.length} категории`)
+console.log( `В списке ${categories.length} категории`)
 
 
 
@@ -62,7 +62,7 @@ const categories = document.querySelectorAll("ul .item");
 
 for (const category of categories) {
     console.log('category.firstElementChild.textContent', category.firstElementChild.textContent);
-   // console.log('category.firstElementChild.textContent', category.firstElementChild.textContent);
+    console.log('category.firstElementChild.textContent', category.firstElementChild[1].textContent);
 }
 
 
