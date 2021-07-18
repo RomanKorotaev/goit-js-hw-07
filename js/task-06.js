@@ -28,18 +28,14 @@
 // Decision // Решение
 
 const inputRef = document.querySelector('#validation-input');
-console.log('inputRef= ', inputRef)
 
 
 inputRef.addEventListener('blur', onInputBlur);
-console.log( 'inputRef.getAttribute (length) = ', inputRef.getAttribute ('data-length') )
-
-console.log('typeof(  inputRef.getAttribute (length) ) = ', typeof(  inputRef.getAttribute('data-length' )))
 
 function onInputBlur() {
-    console.log('Событие потери фокуса на inputRef')
-  console.log('inputRef.value= ', inputRef.value)
-  console.log('inputRef.value.length= ', inputRef.value.length)
+ // console.log('Событие потери фокуса на inputRef')
+ // console.log('inputRef.value= ', inputRef.value)
+ // console.log('inputRef.value.length= ', inputRef.value.length)
 
   if (inputRef.value.length === Number(inputRef.getAttribute('data-length'))) {
    // console.log('Введено правильное количество символов');
