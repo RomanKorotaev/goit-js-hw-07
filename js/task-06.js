@@ -37,15 +37,18 @@ function onInputBlur() {
  // console.log('inputRef.value= ', inputRef.value)
  // console.log('inputRef.value.length= ', inputRef.value.length)
 
-  if (inputRef.value.length === Number(inputRef.getAttribute('data-length'))) {
-   // console.log('Введено правильное количество символов');
-   // inputRef.style.border = '2px solid green'
-    inputRef.classList.add('valid');
-  }
-  else {
-   // console.log('Введено НЕправильное количество символов');
-    //inputRef.style.border = '2px solid red'
-    inputRef.classList.add('invalid');
-  }
+      if (inputRef.value.length === Number(inputRef.getAttribute('data-length'))) {
+      // console.log('Введено правильное количество символов');
+      // inputRef.style.border = '2px solid green'
+        inputRef.classList.add('valid');
+        if (inputRef.classList.contains('invalid')) inputRef.classList.remove('invalid'); 
+      }
+      else {
+      // console.log('Введено НЕправильное количество символов');
+        //inputRef.style.border = '2px solid red'
+        inputRef.classList.add('invalid');
+            if (inputRef.classList.contains('valid')) inputRef.classList.remove('valid'); 
+      
+      }
   }
  
